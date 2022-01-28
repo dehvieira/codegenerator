@@ -1,0 +1,115 @@
+* {
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  max-width: 960px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 180px;
+}
+
+.logo {
+  max-width: 300px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 480px;
+  margin: 14px 0;
+}
+
+.input span {
+  color: black;
+  font-size: 20px;
+}
+
+.box-password {
+  max-width: 480px;
+  margin: 14px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  cursor: pointer;
+}
+
+.box-password:hover .tooltip {
+  visibility: visible;
+  bottom: 50px;
+  opacity: 1;
+}
+
+.title {
+  text-align: center;
+  color: black;
+  font-size: 28px;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+.password-generated {
+  height: 60px;
+  background-color: #0E0E10;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  border: 1px solid #26A69A;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.password-generated:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.tooltip {
+  position: relative;
+  top: 15px;
+  border-radius: 5px;
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+/*# sourceMappingURL=style.css.map */

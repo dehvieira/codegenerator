@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="css/reset.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet"> 
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css">
+      <link rel="stylesheet" href="/css/style.css">
+      
+      
+      <title>Code generator</title>
+</head>
+<body>      
+      <div class="container">            
+            <img src="/assets/logo.png" alt="logo" class="logo" />
+            <div class="input">
+                  <span> Quantidade de <span id="value"></span> caracteres:</span> 
+                  
+                  <p class="range-field">
+                        <input type="range" id="rangecode" min="6" max="25" />
+                  </p>
+
+                  <button id="button" class="waves-effect waves-light btn" onclick="generatedPassword()"> Gerar senha</button>
+            </div>
+
+            <div id="password" class="box-password hide">
+                  <span class="title"> Sua senha gerada foi: </span>
+                  <span id="password-generated" class="password-generated"></span>
+                  
+                  <!-- Trigger -->
+            <button class="btn tooltip" data-clipboard-target="#password-generated" onclick="copyPass()">
+                  <img alt="Clique para copiar">
+            </button>
+            </div>
+                   
+      </div>    
+            
+
+      <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
+      <script src="https://cdn.statically.io/gh/zenorocha/clipboard.js/v2.0.9/dist/clipboard.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
+      <script src="js/clipboard.min.js"></script>  
+      <script src="js/script.js"> </script>
+
+      <script>            
+
+            function copyPass(){
+                  // Create an instance of Notyf
+            var notyf = new Notyf({
+                  duration:2000,
+                  position: {
+                        x:'center',
+                        y:'bottom'
+                  },
+            });          
+
+            // Display a success notification
+            notyf.success('Copiado com sucesso !');
+            
+            }
+
+
+      </script>
+
+
+
+      
+</body>
+</html>
