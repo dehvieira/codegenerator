@@ -11,5 +11,3 @@
 - Clipboard JS
 
 </p>
-
-

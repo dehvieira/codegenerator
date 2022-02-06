@@ -1,0 +1,84 @@
+
+*{
+      font-family: 'Roboto', sans-serif;
+      width:100%;
+      box-sizing: border-box;
+}
+
+
+
+.container {      
+      max-width:960px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin-top:180px;
+    }
+
+    .logo{
+          max-width: 300px;
+          margin-bottom: 20px;
+          border-radius: 10px;
+    
+    }
+
+    .input{
+          display: flex;
+          flex-direction: column;
+          max-width:480px;
+          margin: 14px 0;
+          span{
+            color: black;
+            font-size: 20px;
+          }
+      }
+
+
+      .box-password{
+            max-width: 480px;
+            margin:14px 0;
+            display:flex;
+            align-items: center;
+            flex-direction: column;
+            cursor:pointer;       
+      &:hover .tooltip{
+            visibility:visible;
+            bottom:50px;
+            opacity:1;
+      }}
+
+      .title{
+            text-align: center;
+            color: black;
+            font-size: 28px;
+            margin-top:24px;
+            margin-bottom: 8px;
+      }
+
+
+      .password-generated{
+            height:60px;
+            background-color:#0E0E10;
+            border-radius:5px;
+            display: flex;
+            justify-content:center;
+            align-items:center;
+            color: white;
+            border: 1px solid #26A69A;
+            transition: transform 0.5s;
+      &:hover{
+            transform:scale(1.05)
+      }}
+
+      .tooltip{
+            position: relative;
+            top: 15px;                        
+            border-radius:5px;
+            text-align: center;  
+            visibility: hidden;         
+            opacity: 0;
+            transition: all 0.5s ease-in-out;
+      }
+
+   
